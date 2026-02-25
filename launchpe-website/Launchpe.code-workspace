@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "files",
+			"path": ".."
+		},
+		{
+			"name": ".github",
+			"path": "../../launchpe/launchpe-deploy-files/launchpe-deploy/.github"
+		}
+	],
+	"settings": {}
+}
