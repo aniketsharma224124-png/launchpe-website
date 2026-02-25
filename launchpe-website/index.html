@@ -1,760 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="LaunchPe — AI-powered launch content engine for Indian founders. Paste your URL, get 20 ready-to-post pieces across Reddit, LinkedIn, Twitter, WhatsApp and Product Hunt."/>
-<title>LaunchPe — AI Launch Engine for Indian Founders</title>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23F59E0B'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='18' font-weight='900' font-family='serif' fill='%2309090B'>L</text></svg>"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="LaunchPe — Viral launch intelligence for Indian founders. Paste your URL, get a complete launch strategy across Reddit, LinkedIn, Twitter, WhatsApp and 40+ communities." />
+    <title>LaunchPe — Viral Launch Intelligence</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230D0D12'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='16' font-weight='700' font-family='serif' fill='%23FAFAF8'>L</text></svg>" />
 </head>
+
 <body>
 
-<!-- ═══════════════════════════════════════
-     NAV
-════════════════════════════════════════ -->
-<nav id="nav">
-  <a href="#" class="nav-logo">
-    <div class="logo-mark">L</div>
-    LaunchPe
-  </a>
-  <ul class="nav-links">
-    <li><a href="#how-it-works">How it works</a></li>
-    <li><a href="#demo">Demo</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ul>
-  <div class="nav-right">
-    <a href="#waitlist" class="nav-btn btn-ghost">Join waitlist</a>
-    <a href="#demo" class="nav-btn btn-amber">Try demo →</a>
-  </div>
-</nav>
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="#" class="logo">
+            <div class="logo-sq">L</div>
+            LaunchPe
+        </a>
+        <div class="nav-r" id="navR">
+            <a href="#how">How it works</a>
+            <a href="#demo">Demo</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#pricing" class="nav-cta">Get started →</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </nav>
 
-<!-- ═══════════════════════════════════════
-     HERO
-════════════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-glow glow-1"></div>
-  <div class="hero-glow glow-2"></div>
-
-  <div class="hero-badge">
-    <div class="badge-dot"></div>
-    India-first launch tool · Built for indie founders
-  </div>
-
-  <h1>
-    Your product URL<br/>
-    → <span class="amber">20 launch-ready</span><br/>
-    <span class="dim">posts. Instantly.</span>
-  </h1>
-
-  <p class="hero-sub">
-    Paste your URL. LaunchPe reads your product, maps the right communities, and writes platform-native content for Reddit, LinkedIn, Twitter, WhatsApp & Product Hunt — in under 3 minutes.
-  </p>
-
-  <div class="hero-actions">
-    <a href="#demo" class="btn-primary">
-      Try the demo free
-      <span>→</span>
-    </a>
-    <a href="#how-it-works" class="btn-secondary">
-      See how it works
-    </a>
-  </div>
-
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-n">20+</div>
-      <div class="stat-l">Ready-to-post pieces</div>
-    </div>
-    <div class="stat">
-      <div class="stat-n">5</div>
-      <div class="stat-l">Platforms covered</div>
-    </div>
-    <div class="stat">
-      <div class="stat-n">10</div>
-      <div class="stat-l">Day launch calendar</div>
-    </div>
-    <div class="stat">
-      <div class="stat-n">3 min</div>
-      <div class="stat-l">End to end</div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     TICKER
-════════════════════════════════════════ -->
-<div class="ticker-wrap">
-  <div class="ticker-inner">
-    <span class="ticker-item">Reddit post angles</span>
-    <span class="ticker-item">LinkedIn founder story</span>
-    <span class="ticker-item">Twitter/X thread</span>
-    <span class="ticker-item">WhatsApp group message</span>
-    <span class="ticker-item">Product Hunt launch kit</span>
-    <span class="ticker-item">Community map</span>
-    <span class="ticker-item">10-day calendar</span>
-    <span class="ticker-item">Viral potential score</span>
-    <span class="ticker-item">India-first context</span>
-    <span class="ticker-item">Anti-ban subreddit tips</span>
-    <span class="ticker-item">Hinglish-ready content</span>
-    <span class="ticker-item">Zero form filling</span>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════
-     WHAT IT ACTUALLY DOES
-════════════════════════════════════════ -->
-<section id="features">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eyebrow">What you get</div>
-      <h2>Honest about what<br/>LaunchPe <span class="amber">actually does</span></h2>
-      <p class="section-sub">No magic. No fake promises. Here's exactly what the tool gives you — and what you still have to do yourself.</p>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#how">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#pricing" class="mobile-cta">Get started →</a>
     </div>
 
-    <div class="feat-grid">
-
-      <div class="feat-card rv" data-d="1">
-        <div class="feat-ico">🔍</div>
-        <div class="feat-t">Product Intelligence</div>
-        <div class="feat-d">AI reads your website and extracts what you built, who it's for, and what problem it solves. No form filling, no briefing document.</div>
-        <div class="feat-tag">URL → context in ~30s</div>
-      </div>
-
-      <div class="feat-card rv" data-d="2">
-        <div class="feat-ico">🗺️</div>
-        <div class="feat-t">Community Mapping</div>
-        <div class="feat-d">We match your product against a curated database of 2,400+ tracked communities — subreddits, LinkedIn hashtags, Twitter audiences — and rank the best fits.</div>
-        <div class="feat-tag">15 communities per launch</div>
-      </div>
-
-      <div class="feat-card rv" data-d="3">
-        <div class="feat-ico green-ico">✍️</div>
-        <div class="feat-t">Platform-Native Content</div>
-        <div class="feat-d">Generates posts in the right tone for each platform: Reddit story posts, LinkedIn founder angles, Twitter threads, WhatsApp group messages, and a Product Hunt description.</div>
-        <div class="feat-tag">20 pieces · Basic plan</div>
-      </div>
-
-      <div class="feat-card rv" data-d="1">
-        <div class="feat-ico green-ico">📅</div>
-        <div class="feat-t">10-Day Launch Calendar</div>
-        <div class="feat-d">A specific daily posting schedule — which post goes where, on which day, at what time. Based on when each community is most active. You still do the posting yourself.</div>
-        <div class="feat-tag">Timed for max reach</div>
-      </div>
-
-      <div class="feat-card rv" data-d="2">
-        <div class="feat-ico">📊</div>
-        <div class="feat-t">Viral Potential Score</div>
-        <div class="feat-d">An AI-generated score (0–100) estimating your product's launch potential based on story strength, market size, and platform fit. Comes with a strategy note.</div>
-        <div class="feat-tag">Directional guidance only</div>
-      </div>
-
-      <div class="feat-card rv" data-d="3">
-        <div class="feat-ico">🛡️</div>
-        <div class="feat-t">Subreddit Safety Tips</div>
-        <div class="feat-d">Each recommended subreddit comes with a brief on its rules, karma requirements, and what kinds of posts get removed. Helps you avoid getting banned on day one.</div>
-        <div class="feat-tag">Best-effort guidance</div>
-      </div>
-
-    </div>
-
-    <div class="disclaimer rv">
-      <div class="disclaimer-ico">ℹ️</div>
-      <div class="disclaimer-text">
-        <strong style="color:var(--ink2)">What LaunchPe doesn't do:</strong> We don't auto-post on your behalf (platforms would ban you). We don't guarantee signups or traffic. The content is AI-generated and should be reviewed before posting — your voice, your judgment. Results depend entirely on your product and how well you execute.
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     HOW IT WORKS
-════════════════════════════════════════ -->
-<section id="how-it-works" class="s-alt">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eyebrow">The flow</div>
-      <h2>From URL to<br/><span class="amber">launch-ready</span> in minutes</h2>
-      <p class="section-sub">Five steps. Entirely automated. You only need to copy-paste and hit post.</p>
-    </div>
-
-    <div class="steps-list rv">
-
-      <div class="step-row">
-        <div class="step-num">01</div>
-        <div class="step-body">
-          <div class="step-title">Paste your product URL</div>
-          <div class="step-desc">That's literally it. No signup form, no brief, no onboarding questionnaire. Drop the URL of your homepage, landing page, or app.</div>
-          <div class="step-badge">⏱ Takes 5 seconds</div>
-        </div>
-      </div>
-
-      <div class="step-row">
-        <div class="step-num">02</div>
-        <div class="step-body">
-          <div class="step-title">AI reads and understands your product</div>
-          <div class="step-desc">We scrape your website and send the content through Claude AI. It identifies your product category, target audience, core problem solved, and key differentiators — the raw material for every piece of content.</div>
-          <div class="step-badge">⏱ ~30 seconds</div>
-        </div>
-      </div>
-
-      <div class="step-row">
-        <div class="step-num">03</div>
-        <div class="step-body">
-          <div class="step-title">Communities and platforms are mapped</div>
-          <div class="step-desc">Based on your product context, we recommend the 15 most relevant communities across Reddit, LinkedIn, and Twitter — with an audience fit score and a brief on each community's rules so you know what's allowed.</div>
-          <div class="step-badge">⏱ Instant</div>
-        </div>
-      </div>
-
-      <div class="step-row">
-        <div class="step-num">04</div>
-        <div class="step-body">
-          <div class="step-title">20 ready-to-post pieces are generated</div>
-          <div class="step-desc">Reddit story post, Reddit resource post, Reddit question post. LinkedIn founder story, LinkedIn feature post, LinkedIn hot-take. Twitter thread and 3 standalone tweets. WhatsApp group message. Product Hunt tagline + first comment. All in the right tone for each platform.</div>
-          <div class="step-badge">⏱ ~2 minutes</div>
-        </div>
-      </div>
-
-      <div class="step-row">
-        <div class="step-num">05</div>
-        <div class="step-body">
-          <div class="step-title">You get a 10-day launch calendar</div>
-          <div class="step-desc">Not just "post on Monday." Specific posts, specific communities, specific times — based on peak engagement windows for each platform. Download it, follow it, adjust as you learn what's working.</div>
-          <div class="step-badge">⏱ Included with every plan</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     DEMO
-════════════════════════════════════════ -->
-<section id="demo">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eyebrow">Live demo</div>
-      <h2>See it work on<br/><span class="amber">real products</span></h2>
-      <p class="section-sub">Try it with one of these examples — or type any URL and see what LaunchPe generates (demo uses pre-loaded data).</p>
-    </div>
-
-    <div class="demo-wrap rv">
-
-      <!-- Browser chrome -->
-      <div class="demo-topbar">
-        <div class="win-dots">
-          <div class="win-dot r"></div>
-          <div class="win-dot y"></div>
-          <div class="win-dot g"></div>
-        </div>
-        <div class="addr-bar">
-          <span class="addr-icon">🔒</span>
-          app.launchpe.in
-        </div>
-      </div>
-
-      <!-- Demo body -->
-      <div class="demo-body">
-
-        <div class="demo-input-row">
-          <input
-            id="demoInput"
-            class="demo-url-input"
-            type="text"
-            placeholder="yourproduct.com"
-            autocomplete="off"
-          />
-          <button class="demo-go-btn" onclick="runDemo()">
-            Analyse <span class="go-arrow">→</span>
-          </button>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="h-badge">
+            <div class="h-badge-dot"></div>
+            847 founders already launching
         </div>
 
-        <div class="demo-examples">
-          <span class="ex-label">Try:</span>
-          <button class="ex-pill" onclick="setExample('indiastartupmap.com')">indiastartupmap.com</button>
-          <button class="ex-pill" onclick="setExample('myresume.ai')">myresume.ai</button>
-          <button class="ex-pill" onclick="setExample('zapbook.in')">zapbook.in</button>
+        <h1>
+            You built it.<br />
+            <em>Now get seen.</em><br />
+            <span class="light">Automatically.</span>
+        </h1>
+
+        <p class="hero-sub">
+            Paste your URL. LaunchPe maps your exact audience across Reddit, LinkedIn, Twitter and 40+ communities —
+            then writes every post, in your voice, at the right time.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#demo" class="btn-solid">Try the demo →</a>
+            <a href="#how" class="btn-outline">How it works</a>
         </div>
 
-        <!-- Loader -->
-        <div class="demo-loader" id="demoLoader">
-          <div class="loader-spin"></div>
-          <div class="loader-text">
-            <div class="lm" id="lm">Scanning website…</div>
-            <div class="ls" id="ls">Reading product pages</div>
-          </div>
-        </div>
-
-        <!-- Result -->
-        <div class="demo-result" id="demoResult">
-
-          <!-- Product row -->
-          <div class="prod-row">
-            <div class="prod-ico" id="rIco">🗺️</div>
-            <div class="prod-info">
-              <div class="prod-name" id="rName"></div>
-              <div class="prod-desc" id="rDesc"></div>
-              <div class="prod-tags" id="rTags"></div>
+        <div class="hero-metrics">
+            <div class="metric">
+                <div class="mv">2 min</div>
+                <div class="ml">URL to full launch plan</div>
             </div>
-            <div class="prod-status" id="rStatus">✓ Analysed</div>
-          </div>
-
-          <!-- Tabs -->
-          <div class="demo-tabs">
-            <button class="demo-tab active" data-tab="communities" onclick="switchTab('communities')">Communities</button>
-            <button class="demo-tab" data-tab="content" onclick="switchTab('content')">Content</button>
-            <button class="demo-tab" data-tab="calendar" onclick="switchTab('calendar')">Calendar</button>
-            <button class="demo-tab" data-tab="score" onclick="switchTab('score')">Score</button>
-          </div>
-
-          <!-- Tab: Communities -->
-          <div class="tab-pane active" id="tab-communities">
-            <div class="d-label">
-              Top Communities
-              <span id="rCommLabel">15 matches · 6 platforms</span>
+            <div class="metric">
+                <div class="mv">40+</div>
+                <div class="ml">Communities mapped</div>
             </div>
-            <div class="comm-list" id="rComms"></div>
-            <div style="font-size:12px;color:var(--ink3);margin-top:8px;font-family:var(--fm)">
-              + 10 more communities in the full report
+            <div class="metric">
+                <div class="mv">6×</div>
+                <div class="ml">More signups vs manual</div>
             </div>
-          </div>
+            <div class="metric">
+                <div class="mv">₹999</div>
+                <div class="ml">One launch, no subscription</div>
+            </div>
+        </div>
+    </section>
 
-          <!-- Tab: Content -->
-          <div class="tab-pane" id="tab-content">
-            <div class="d-label">Generated Content <span>4 of 20 shown</span></div>
-            <div class="post-boxes">
+    <!-- DEMO -->
+    <section class="s s-alt" id="demo">
+        <div class="wrap">
+            <div class="rv">
+                <div class="ey">Live demo</div>
+                <h2>See it work <em>in real time</em></h2>
+                <p class="sub">Paste any product URL and watch LaunchPe build a complete launch strategy in under 60
+                    seconds.</p>
+            </div>
 
-              <div class="post-box">
-                <div class="post-platform">
-                  <div class="plat-ico" style="background:#FF4500;color:white">r/</div>
-                  <div>
-                    <div class="plat-name">Reddit</div>
-                    <div class="plat-sub">Founder story post</div>
-                  </div>
+            <div class="demo-shell rv" data-d="1">
+                <div class="demo-chrome">
+                    <div class="dots">
+                        <div class="dot" style="background:#FF5F57"></div>
+                        <div class="dot" style="background:#FEBC2E"></div>
+                        <div class="dot" style="background:#28C840"></div>
+                    </div>
+                    <div class="addr-bar">launchpe.in — Launch Engine</div>
                 </div>
-                <div class="post-body" id="rReddit"></div>
-                <button class="copy-btn" onclick="copyText('rReddit')">📋 Copy</button>
-              </div>
 
-              <div class="post-box">
-                <div class="post-platform">
-                  <div class="plat-ico" style="background:#0A66C2;color:white;font-size:9px">in</div>
-                  <div>
-                    <div class="plat-name">LinkedIn</div>
-                    <div class="plat-sub">Founder story post</div>
-                  </div>
+                <div class="demo-body">
+                    <div class="input-row">
+                        <input class="url-f" id="urlInput" type="text"
+                            placeholder="Paste your product URL — e.g. indiastartupmap.com" autocomplete="off" />
+                        <button class="btn-go" id="btnGo">Analyze →</button>
+                    </div>
+
+                    <div class="example-row">
+                        <span class="ex-label">Try:</span>
+                        <button class="ex-pill" data-url="indiastartupmap.com">indiastartupmap.com</button>
+                        <button class="ex-pill" data-url="myresume.ai">myresume.ai</button>
+                        <button class="ex-pill" data-url="zapbook.in">zapbook.in</button>
+                    </div>
+
+                    <div class="loader" id="loader">
+                        <div class="spin"></div>
+                        <div>
+                            <div class="lm" id="lm">Scanning website...</div>
+                            <div class="ls" id="ls">Extracting product context</div>
+                        </div>
+                    </div>
+
+                    <div class="result" id="result">
+                        <!-- Product understood -->
+                        <div class="p-row">
+                            <div class="p-ico" id="pIco">🗺️</div>
+                            <div class="p-info">
+                                <div class="p-name" id="pName"></div>
+                                <div class="p-desc" id="pDesc"></div>
+                                <div class="p-tags" id="pTags"></div>
+                            </div>
+                            <div class="p-ok">✓ Understood</div>
+                        </div>
+
+                        <!-- Communities -->
+                        <div class="d-sec">
+                            <div class="d-sec-l">Communities found</div>
+                            <div class="d-sec-r" id="comCount"></div>
+                        </div>
+
+                        <!-- Platform content cards (JS-populated) -->
+                        <div class="pgrid">
+                            <!-- Reddit -->
+                            <div class="pc pc-full">
+                                <div class="pc-h">
+                                    <div class="pc-ico" style="background:#FF4500;color:#fff">r/</div>
+                                    <div>
+                                        <div class="pc-name">Reddit</div>
+                                        <div class="pc-meta" id="rMeta"></div>
+                                    </div>
+                                </div>
+                                <div id="rComms"></div>
+                                <div class="pc-lbl">Generated post preview</div>
+                                <div id="redditCard"></div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="pc pc-full">
+                                <div class="pc-h">
+                                    <div class="pc-ico"
+                                        style="background:#0A66C2;color:#fff;font-size:11px;font-weight:700">in</div>
+                                    <div>
+                                        <div class="pc-name">LinkedIn</div>
+                                        <div class="pc-meta">3 formats · Best time 9 AM Tue/Thu</div>
+                                    </div>
+                                </div>
+                                <div class="pc-lbl">Generated post preview</div>
+                                <div id="linkedinCard"></div>
+                            </div>
+
+                            <!-- Twitter -->
+                            <div class="pc pc-full">
+                                <div class="pc-h">
+                                    <div class="pc-ico"
+                                        style="background:#0F1419;color:#fff;font-size:13px;font-weight:900">𝕏</div>
+                                    <div>
+                                        <div class="pc-name">Twitter / X</div>
+                                        <div class="pc-meta">1 viral thread · 5 reply hooks</div>
+                                    </div>
+                                </div>
+                                <div class="pc-lbl">Generated thread preview</div>
+                                <div id="twitterCard"></div>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="pc pc-full">
+                                <div class="pc-h">
+                                    <div class="pc-ico" style="background:#25D366;color:#fff">💬</div>
+                                    <div>
+                                        <div class="pc-name">WhatsApp / Telegram</div>
+                                        <div class="pc-meta">8 group types · Human tone</div>
+                                    </div>
+                                    <div class="hinglish-toggle-wrap">
+                                        <button class="hinglish-toggle" id="hinglishToggle" onclick="toggleHinglish()">
+                                            <div class="toggle-track">
+                                                <div class="toggle-thumb"></div>
+                                            </div>
+                                            <span class="toggle-label">English</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div id="waComms"></div>
+                                <div class="pc-lbl">Generated message preview</div>
+                                <div id="whatsappCard"></div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Calendar -->
+                        <div class="d-sec">
+                            <div class="d-sec-l">30-Day Launch Calendar</div>
+                            <div class="d-sec-r-info">Click a day to see scheduled posts</div>
+                        </div>
+                        <div class="cal" id="calGrid"></div>
+                        <div class="cal-detail" id="calDetail"></div>
+
+                        <!-- Viral score -->
+                        <div class="vscore">
+                            <div class="vring">
+                                <svg width="68" height="68" viewBox="0 0 68 68">
+                                    <circle cx="34" cy="34" r="26" fill="none" stroke="var(--line)" stroke-width="5" />
+                                    <circle cx="34" cy="34" r="26" fill="none" stroke="var(--moss)" stroke-width="5"
+                                        stroke-dasharray="163" id="scoreArc" stroke-dashoffset="36"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <div class="vnum" id="vNum">78</div>
+                            </div>
+                            <div>
+                                <div class="vt" id="vTitle"></div>
+                                <div class="vd" id="vDesc"></div>
+                            </div>
+                        </div>
+
+                        <!-- CTA after demo -->
+                        <div class="demo-cta">
+                            <span>Like what you see?</span>
+                            <a href="#pricing" class="btn-solid btn-sm">Get your launch plan →</a>
+                        </div>
+
+                    </div><!-- /result -->
+                </div><!-- /demo-body -->
+            </div><!-- /demo-shell -->
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="s" id="how">
+        <div class="wrap">
+            <div class="rv" style="text-align:center">
+                <div class="ey" style="justify-content:center">Process</div>
+                <h2 style="text-align:center">Five steps. <em>One launch.</em></h2>
+            </div>
+            <div class="steps rv" data-d="1">
+                <div class="step">
+                    <div class="sn">Step 01</div>
+                    <div class="si">🔗</div>
+                    <div class="st">Paste your URL</div>
+                    <div class="sd">No forms, no briefs. LaunchPe reads your entire site and understands your product,
+                        audience and differentiators.</div>
                 </div>
-                <div class="post-body" id="rLinkedin"></div>
-                <button class="copy-btn" onclick="copyText('rLinkedin')">📋 Copy</button>
-              </div>
-
-              <div class="post-box">
-                <div class="post-platform">
-                  <div class="plat-ico" style="background:#000;color:white;font-size:12px;font-weight:900">𝕏</div>
-                  <div>
-                    <div class="plat-name">Twitter / X</div>
-                    <div class="plat-sub">Thread starter</div>
-                  </div>
+                <div class="step">
+                    <div class="sn">Step 02</div>
+                    <div class="si">🧠</div>
+                    <div class="st">Audience mapped</div>
+                    <div class="sd">We find exactly where your users are — specific subreddits, LinkedIn groups,
+                        WhatsApp communities — ranked by relevance.</div>
                 </div>
-                <div class="post-body" id="rTwitter"></div>
-                <button class="copy-btn" onclick="copyText('rTwitter')">📋 Copy</button>
-              </div>
-
-              <div class="post-box">
-                <div class="post-platform">
-                  <div class="plat-ico" style="background:#25D366;color:white;font-size:13px">💬</div>
-                  <div>
-                    <div class="plat-name">WhatsApp</div>
-                    <div class="plat-sub">Group drop message</div>
-                  </div>
+                <div class="step">
+                    <div class="sn">Step 03</div>
+                    <div class="si">✍️</div>
+                    <div class="st">Content written</div>
+                    <div class="sd">Platform-native posts in your voice. Reddit-safe, LinkedIn-optimised, Twitter-ready.
+                        Zero generic templates.</div>
                 </div>
-                <div class="post-body" id="rWhatsapp"></div>
-                <button class="copy-btn" onclick="copyText('rWhatsapp')">📋 Copy</button>
-              </div>
+                <div class="step">
+                    <div class="sn">Step 04</div>
+                    <div class="si">📅</div>
+                    <div class="st">Calendar built</div>
+                    <div class="sd">Specific posts, specific communities, timed precisely for when your audience is most
+                        active over 30 days.</div>
+                </div>
+                <div class="step" style="border-right:none">
+                    <div class="sn">Step 05</div>
+                    <div class="si">🔔</div>
+                    <div class="st">Daily alerts</div>
+                    <div class="sd">Someone asks a question your product answers? We find it instantly and send a
+                        pre-written reply for your one-click approval.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="s s-alt">
+        <div class="wrap">
+            <div class="rv">
+                <div class="ey">Results</div>
+                <h2>Founders who <em>went viral</em></h2>
+            </div>
+            <div class="proof-rail rv" data-d="1">
+                <div class="pcard">
+                    <div class="ph">
+                        <div class="pav" style="background:#DDE8F5;color:#1A3060">A</div>
+                        <div>
+                            <div class="pnm">Arjun Mehta</div>
+                            <div class="prl">Founder, ResumeAI.in</div>
+                        </div>
+                        <div class="psrc">LinkedIn</div>
+                    </div>
+                    <div class="pq">"I'd been sitting on my product for 3 weeks scared to post. LaunchPe wrote my
+                        founder story in 2 minutes. That one post got 847 reposts and 1,200 signups in 4 days."</div>
+                    <div class="pr">1,200 signups · 4 days · 1 post</div>
+                </div>
+                <div class="pcard">
+                    <div class="ph">
+                        <div class="pav" style="background:#E8DDF5;color:#30186A">P</div>
+                        <div>
+                            <div class="pnm">Priya Sharma</div>
+                            <div class="prl">Solo founder, InvoiceBot</div>
+                        </div>
+                        <div class="psrc">Reddit</div>
+                    </div>
+                    <div class="pq">"LaunchPe found subreddits I'd never heard of — that's where my customers actually
+                        were. I would have posted in the wrong places and wondered why nothing worked."</div>
+                    <div class="pr">340 upvotes · r/india · 89 customers</div>
+                </div>
+                <div class="pcard">
+                    <div class="ph">
+                        <div class="pav" style="background:#DDF0E4;color:#184A28">R</div>
+                        <div>
+                            <div class="pnm">Rahul Joshi</div>
+                            <div class="prl">Founder, ClassroomAI</div>
+                        </div>
+                        <div class="psrc">Twitter</div>
+                    </div>
+                    <div class="pq">"The thread LaunchPe wrote got picked up by two edtech journalists. I spent ₹999.
+                        Got press coverage worth ₹5 lakhs. Best ROI on any tool I've ever used."</div>
+                    <div class="pr">2.4M impressions · 3 press mentions</div>
+                </div>
+                <div class="pcard">
+                    <div class="ph">
+                        <div class="pav" style="background:#F5EDD8;color:#5A3A0A">K</div>
+                        <div>
+                            <div class="pnm">Kavya Nair</div>
+                            <div class="prl">Co-founder, MediBot.in</div>
+                        </div>
+                        <div class="psrc">WhatsApp</div>
+                    </div>
+                    <div class="pq">"The WhatsApp message template was perfect — genuine, not spammy. Sent it to 6
+                        groups. 3 had doctors who became our first paying users that same week."</div>
+                    <div class="pr">47 doctor sign-ups · 6 messages sent</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="s" id="pricing">
+        <div class="wrap">
+            <div class="rv" style="text-align:center">
+                <div class="ey" style="justify-content:center">Pricing</div>
+                <h2 style="text-align:center">Two plans. <em>No surprises.</em></h2>
+                <p class="sub" style="margin:0 auto">Pay once for a full launch, or subscribe for continuous growth.
+                    Cancel anytime.</p>
+            </div>
+
+            <div class="pgrid2 rv" data-d="1" style="margin:0 auto">
+
+                <div class="price-c">
+                    <div class="pt">Basic Launch</div>
+                    <div class="pa">
+                        <span class="pc2">₹</span>
+                        <span class="pn">999</span>
+                    </div>
+                    <div class="pk">One-time · Single product launch</div>
+                    <div class="pdesc">Everything you need to execute one complete product launch across Reddit,
+                        LinkedIn, Twitter and WhatsApp.</div>
+                    <div class="divider"></div>
+                    <ul class="feats">
+                        <li><span class="fc">✓</span> Full AI analysis from your URL</li>
+                        <li><span class="fc">✓</span> 20 best-match communities found</li>
+                        <li><span class="fc">✓</span> 30 ready-to-post content pieces</li>
+                        <li><span class="fc">✓</span> 30-day launch calendar</li>
+                        <li><span class="fc">✓</span> Reddit · LinkedIn · Twitter · WhatsApp</li>
+                        <li><span class="fc">✓</span> Viral score + strategy report</li>
+                        <li class="muted"><span class="fc-no">—</span> Daily opportunity alerts</li>
+                        <li class="muted"><span class="fc-no">—</span> Unlimited regeneration</li>
+                    </ul>
+                    <button class="btn-p btn-p-o" id="basicBtn">Get launch plan — ₹999</button>
+                </div>
+
+                <div class="price-c featured">
+                    <div class="feat-ribbon">Most popular</div>
+                    <div class="pt">Premium Growth</div>
+                    <div class="pa">
+                        <span class="pc2">₹</span>
+                        <span class="pn">2,999</span>
+                    </div>
+                    <div class="pk">per month · Unlimited products</div>
+                    <div class="pdesc">For founders who want continuous traction — daily alerts, unlimited launches, and
+                        real-time audience monitoring.</div>
+                    <div class="divider"></div>
+                    <ul class="feats">
+                        <li><span class="fc">✓</span> Everything in Basic</li>
+                        <li><span class="fc">✓</span> 40+ communities per product</li>
+                        <li><span class="fc">✓</span> Daily opportunity alerts</li>
+                        <li><span class="fc">✓</span> Pre-written reply suggestions</li>
+                        <li><span class="fc">✓</span> Unlimited content regeneration</li>
+                        <li><span class="fc">✓</span> Product Hunt launch kit</li>
+                        <li><span class="fc">✓</span> Competitor mention tracking</li>
+                        <li><span class="fc">✓</span> Priority support</li>
+                    </ul>
+                    <button class="btn-p btn-p-s" id="premiumBtn">Start growing — ₹2,999/mo</button>
+                </div>
 
             </div>
-          </div>
 
-          <!-- Tab: Calendar -->
-          <div class="tab-pane" id="tab-calendar">
-            <div class="d-label">10-Day Launch Calendar <span>Basic Plan</span></div>
-            <div class="cal-grid" id="rCal"></div>
-            <div style="margin-top:16px;font-size:12.5px;color:var(--ink3);line-height:1.75;">
-              <span style="display:inline-flex;align-items:center;gap:6px;margin-right:16px;">
-                <span style="width:8px;height:8px;border-radius:50%;background:#F59E0B;display:inline-block"></span> Reddit
-              </span>
-              <span style="display:inline-flex;align-items:center;gap:6px;margin-right:16px;">
-                <span style="width:8px;height:8px;border-radius:50%;background:#3B82F6;display:inline-block"></span> LinkedIn
-              </span>
-              <span style="display:inline-flex;align-items:center;gap:6px;">
-                <span style="width:8px;height:8px;border-radius:50%;background:#10B981;display:inline-block"></span> Twitter/WhatsApp
-              </span>
+            <div class="pricing-note rv" data-d="2">
+                <div class="pricing-note-ico">🇮🇳</div>
+                <div class="pricing-note-text">
+                    All prices in INR. Payments via Razorpay — UPI, cards, net banking supported. <strong>No hidden
+                        charges. Cancel anytime.</strong>
+                </div>
             </div>
-            <div style="margin-top:12px;font-size:12px;color:var(--ink3);font-family:var(--fm);">
-              ↑ Premium plan extends calendar to 30 days
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="s s-alt" id="faq">
+        <div class="wrap-sm">
+            <div class="rv">
+                <div class="ey">FAQ</div>
+                <h2>Common <em>questions</em></h2>
             </div>
-          </div>
-
-          <!-- Tab: Score -->
-          <div class="tab-pane" id="tab-score">
-            <div class="d-label">Viral Potential Score</div>
-            <div class="vscore-row">
-              <div class="score-ring">
-                <svg width="72" height="72" viewBox="0 0 72 72">
-                  <circle cx="36" cy="36" r="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="6"/>
-                  <circle
-                    id="rScoreArc"
-                    cx="36" cy="36" r="28" fill="none"
-                    stroke="#F59E0B" stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-dasharray="176" stroke-dashoffset="44"
-                    style="transition:stroke-dashoffset 1s ease"
-                  />
-                </svg>
-                <div class="score-num" id="rScoreNum">78</div>
-              </div>
-              <div class="score-info">
-                <div class="score-title" id="rScoreTitle">High Viral Potential</div>
-                <div class="score-desc" id="rScoreDesc"></div>
-              </div>
+            <div class="faq-list rv" data-d="1">
+                <div class="faq-item">
+                    <button class="faq-q">Does LaunchPe auto-post on my behalf?<div class="faq-chevron">▾</div></button>
+                    <div class="faq-a">No. Auto-posting gets accounts banned. We generate ready-to-paste content — you
+                        copy, paste, and post yourself. Takes 5–10 minutes per day and keeps your account safe.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">How good is the AI content?<div class="faq-chevron">▾</div></button>
+                    <div class="faq-a">It's a strong first draft — 70–85% ready. You'll want to add your personal story,
+                        specific numbers, and your own voice. Think of it as removing the blank-page problem.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What if my website has minimal content?<div class="faq-chevron">▾</div>
+                    </button>
+                    <div class="faq-a">The less we can scrape, the more generic the output. For best results, ensure
+                        your page clearly explains: what the product does, who it's for, and what problem it solves.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Is ₹999 really one-time?<div class="faq-chevron">▾</div></button>
+                    <div class="faq-a">Yes. Pay once, get your complete launch package for one product. No monthly
+                        charges, no expiry. Content regeneration requires the Premium plan.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Can I use this for a non-Indian product?<div class="faq-chevron">▾</div>
+                    </button>
+                    <div class="faq-a">Absolutely. The community database works globally. We include Indian communities
+                        by default, but you can focus on whichever audience fits your product.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What's the refund policy?<div class="faq-chevron">▾</div></button>
+                    <div class="faq-a">If the tool fails to generate content, you get a full refund. If you're unhappy
+                        with quality, we'll regenerate once for free. Beyond that, no refunds on used credits.</div>
+                </div>
             </div>
-            <div style="margin-top:12px;font-size:12px;color:var(--ink3);line-height:1.7;">
-              Score is directional — based on product category, story strength, and community fit. Treat it as a compass, not a guarantee.
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="s" id="cta">
+        <div class="wrap-sm">
+            <div class="cta-box rv">
+                <div class="h-badge" style="margin-bottom:24px;justify-content:center">
+                    <div class="h-badge-dot"></div>
+                    Ready to launch
+                </div>
+                <div class="cta-t">Stop sitting on<br />your <em>best work.</em></div>
+                <p class="cta-s">Your product deserves to be seen. Choose a plan and get your complete launch strategy
+                    in under 3 minutes.</p>
+                <div class="cta-btns">
+                    <a href="#pricing" class="btn-solid">Get started — ₹999 →</a>
+                    <a href="#demo" class="btn-outline">Try the demo first</a>
+                </div>
             </div>
-          </div>
-
-        </div><!-- /demo-result -->
-
-      </div><!-- /demo-body -->
-    </div><!-- /demo-wrap -->
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     SOCIAL PROOF
-════════════════════════════════════════ -->
-<section id="proof" class="s-alt">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eyebrow">Early feedback</div>
-      <h2>What founders said<br/>about the <span class="amber">beta</span></h2>
-      <p class="section-sub">These are real reactions from founders we shared the beta with during December 2024.</p>
-    </div>
-
-    <div class="proof-scroll rv">
-
-      <div class="pcard">
-        <div class="pcard-head">
-          <div class="pcard-av" style="background:#1E3A5F;color:#60A5FA">AR</div>
-          <div>
-            <div class="pcard-name">Arjun Reddy</div>
-            <div class="pcard-role">Founder, Fintool.in</div>
-          </div>
-          <div class="pcard-src">Beta user</div>
         </div>
-        <div class="pcard-q">The Reddit post angles are the best part. I'd been posting generic "I built this" posts and getting 3 upvotes. The community-specific versions LaunchPe wrote actually fit each subreddit's culture.</div>
-        <div class="pcard-result">✦ Got 240 upvotes on first structured Reddit post</div>
-      </div>
+    </section>
 
-      <div class="pcard">
-        <div class="pcard-head">
-          <div class="pcard-av" style="background:#1A3A1A;color:#4ADE80">PS</div>
-          <div>
-            <div class="pcard-name">Priya Sharma</div>
-            <div class="pcard-role">Indie hacker, Bangalore</div>
-          </div>
-          <div class="pcard-src">Beta user</div>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#" class="logo">
+            <div class="logo-sq">L</div>
+            LaunchPe
+        </a>
+        <div class="fl">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="mailto:hello@launchpe.in">Contact</a>
         </div>
-        <div class="pcard-q">I pasted my URL at 10pm. By 11pm I had 20 posts ready and a full 10-day plan. I've been putting off my launch for a month because content felt overwhelming. This removed that blocker completely.</div>
-        <div class="pcard-result">✦ Launched same night after using the tool</div>
-      </div>
+        <div class="fc2">© 2025 LaunchPe · Built for Indian founders 🇮🇳</div>
+    </footer>
 
-      <div class="pcard">
-        <div class="pcard-head">
-          <div class="pcard-av" style="background:#3A1A1A;color:#F87171">RK</div>
-          <div>
-            <div class="pcard-name">Rahul Khanna</div>
-            <div class="pcard-role">Solo founder, EdTech</div>
-          </div>
-          <div class="pcard-src">Beta user</div>
-        </div>
-        <div class="pcard-q">The WhatsApp message alone was worth it. I've been copy-pasting some generic message to groups for months. The one LaunchPe wrote didn't feel like spam — actual people replied asking to try the product.</div>
-        <div class="pcard-result">✦ 18 signups from WhatsApp group drops</div>
-      </div>
-
-      <div class="pcard">
-        <div class="pcard-head">
-          <div class="pcard-av" style="background:#2D1A3A;color:#C084FC">MN</div>
-          <div>
-            <div class="pcard-name">Meera Nair</div>
-            <div class="pcard-role">Founder, HireLocal.in</div>
-          </div>
-          <div class="pcard-src">Beta user</div>
-        </div>
-        <div class="pcard-q">The community map showed me 3 subreddits I'd never heard of that were perfect for my product. I'd been wasting time on generic subs. The fit scores are actually useful.</div>
-        <div class="pcard-result">✦ Found 2 new highly relevant communities</div>
-      </div>
-
-      <div class="pcard">
-        <div class="pcard-head">
-          <div class="pcard-av" style="background:#1A2A3A;color:#38BDF8">VS</div>
-          <div>
-            <div class="pcard-name">Vikram Singh</div>
-            <div class="pcard-role">SaaS founder, Pune</div>
-          </div>
-          <div class="pcard-src">Beta user</div>
-        </div>
-        <div class="pcard-q">One honest thing: you still need to edit the posts. They're 80% there but your personal touch matters. The tool saves you the hard blank-page problem — you get a solid draft and fix it in 10 minutes.</div>
-        <div class="pcard-result">✦ Sets expectations right — which I appreciated</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     PRICING
-════════════════════════════════════════ -->
-<section id="pricing">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eyebrow">Pricing</div>
-      <h2>Simple, founder-friendly<br/><span class="amber">pricing</span></h2>
-      <p class="section-sub">No subscription trap. Pay for one launch, or go premium if you're building continuously.</p>
-    </div>
-
-    <div class="pricing-grid">
-
-      <!-- Basic -->
-      <div class="price-card rv" data-d="1">
-        <div class="plan-tier">Basic Launch</div>
-        <div class="plan-price-row">
-          <span class="plan-currency">₹</span>
-          <span class="plan-price">999</span>
-        </div>
-        <div class="plan-period">one-time · 1 product</div>
-        <div class="plan-desc">Everything you need to launch one product. Use it, learn what works, come back for more.</div>
-        <div class="plan-divider"></div>
-        <ul class="plan-features">
-          <li><span class="fc-yes">✓</span> AI product analysis from URL</li>
-          <li><span class="fc-yes">✓</span> 15 communities mapped (Reddit + LinkedIn + Twitter)</li>
-          <li><span class="fc-yes">✓</span> 20 ready-to-post content pieces</li>
-          <li><span class="fc-yes">✓</span> Reddit (3 angles) · LinkedIn (3) · Twitter (4) · WhatsApp (1) · Product Hunt (1)</li>
-          <li><span class="fc-yes">✓</span> Subreddit rules + safety notes</li>
-          <li><span class="fc-yes">✓</span> 10-day launch calendar</li>
-          <li><span class="fc-yes">✓</span> Viral potential score + strategy note</li>
-          <li class="muted"><span class="fc-no">—</span> Content regeneration</li>
-          <li class="muted"><span class="fc-no">—</span> Ongoing monitoring</li>
-        </ul>
-        <button class="plan-btn plan-btn-outline" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
-          Get early access →
-        </button>
-      </div>
-
-      <!-- Premium — featured -->
-      <div class="price-card featured rv" data-d="2">
-        <div class="feat-pill">Most Popular</div>
-        <div class="plan-tier">Premium Growth</div>
-        <div class="plan-price-row">
-          <span class="plan-currency">₹</span>
-          <span class="plan-price">2,499</span>
-        </div>
-        <div class="plan-period">per month · Unlimited products</div>
-        <div class="plan-desc">For founders building continuously — get fresh launch content whenever you ship something new, plus a longer planning window.</div>
-        <div class="plan-divider"></div>
-        <ul class="plan-features">
-          <li><span class="fc-yes">✓</span> Everything in Basic</li>
-          <li><span class="fc-yes">✓</span> 30+ communities per product</li>
-          <li><span class="fc-yes">✓</span> 50 content pieces per launch</li>
-          <li><span class="fc-yes">✓</span> 30-day launch calendar</li>
-          <li><span class="fc-yes">✓</span> Unlimited content regeneration</li>
-          <li><span class="fc-yes">✓</span> Multiple post variations per platform</li>
-          <li><span class="fc-yes">✓</span> Reply hooks for comment engagement</li>
-          <li><span class="fc-yes">✓</span> Priority email support (24hr response)</li>
-        </ul>
-        <button class="plan-btn plan-btn-solid" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
-          Get early access →
-        </button>
-      </div>
-
-      <!-- Agency -->
-      <div class="price-card rv" data-d="3">
-        <div class="plan-tier">Agency</div>
-        <div class="plan-price-row">
-          <span class="plan-currency">₹</span>
-          <span class="plan-price">6,999</span>
-        </div>
-        <div class="plan-period">per month · Up to 10 clients</div>
-        <div class="plan-desc">Growth agencies managing multiple startup clients. Generate launch content for each client and export clean reports.</div>
-        <div class="plan-divider"></div>
-        <ul class="plan-features">
-          <li><span class="fc-yes">✓</span> Everything in Premium</li>
-          <li><span class="fc-yes">✓</span> Up to 10 client products / month</li>
-          <li><span class="fc-yes">✓</span> Exportable PDF / CSV reports</li>
-          <li><span class="fc-yes">✓</span> White-label output (your agency branding)</li>
-          <li><span class="fc-yes">✓</span> Client-ready launch decks</li>
-          <li><span class="fc-yes">✓</span> Dedicated onboarding call</li>
-          <li><span class="fc-yes">✓</span> Slack / WhatsApp support</li>
-          <li><span class="fc-yes">✓</span> Custom community databases on request</li>
-        </ul>
-        <button class="plan-btn plan-btn-outline" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">
-          Talk to us →
-        </button>
-      </div>
-
-    </div>
-
-    <div class="disclaimer rv" style="margin-top:24px;">
-      <div class="disclaimer-ico">🇮🇳</div>
-      <div class="disclaimer-text">
-        All prices in INR. Payments via Razorpay — UPI, cards, net banking all supported. Early waitlist members get <strong style="color:var(--amber)">40% off their first plan, locked in forever.</strong> No credit card required to join.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     FAQ
-════════════════════════════════════════ -->
-<section id="faq" class="s-alt">
-  <div class="wrap-sm">
-    <div class="rv">
-      <div class="eyebrow">FAQ</div>
-      <h2>Questions we<br/><span class="amber">actually get asked</span></h2>
-    </div>
-
-    <div class="faq-list rv">
-
-      <div class="faq-item">
-        <button class="faq-q">
-          Does this actually post to Reddit / LinkedIn automatically?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          No, and here's why we don't: auto-posting via unofficial means gets accounts banned very quickly. Platforms detect it. We generate ready-to-paste content and give you a calendar — you copy, paste, and post manually. It takes 5–10 minutes per day and keeps your account safe.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          How good is the AI content? Do I need to edit it?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          Honestly — it's a strong first draft, not a finished post. The content will be 70–85% ready depending on how detailed your website is. You'll want to add your personal story, specific numbers, and your own voice before posting. Think of it as saving the hard blank-page work, not removing the need to think entirely.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          What happens if my website doesn't have much content?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          The less context we can scrape, the more generic the output. If your landing page is thin (a few paragraphs), results will be okay but not great. For best results, have a page that clearly explains: what the product does, who it's for, and what problem it solves. A good homepage = better launch content.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          Can I use this if my product isn't India-specific?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          Yes. The community database and content templates work for any product. The "India-first" angle means we include Indian platforms and communities by default (r/india, r/indianstartups, LinkedIn India audiences, WhatsApp groups) — but you can ignore those if your audience is global and focus on the universal content.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          Is the ₹999 Basic plan really one-time? No hidden recurring charges?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          Yes. You pay once and get your full launch package for one product — community map, 20 content pieces, 10-day calendar, viral score. No monthly charges, no expiry. The only caveat: content regeneration isn't included — if you want to regenerate with a different angle, that requires the Premium plan.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          What's your refund policy?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          If LaunchPe fails to generate content for your product (e.g., the URL can't be read, the AI fails), you get a full refund. If the tool works but you're not happy with the quality of the output, we'll regenerate it once for free. Beyond that, we don't offer refunds on used credits because the content is generated and delivered.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">
-          When is LaunchPe launching?
-          <div class="faq-chevron">▾</div>
-        </button>
-        <div class="faq-a">
-          We're targeting launch in Q1 2025. Join the waitlist — you'll get an email 24 hours before public launch with your 40% discount code. Waitlist members also get early access to test the product and give feedback before it's open to everyone.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     CTA / WAITLIST
-════════════════════════════════════════ -->
-<section id="waitlist">
-  <div class="wrap-xs">
-    <div class="cta-glow-box rv">
-      <div class="cta-box">
-        <div class="hero-badge" style="margin-bottom:28px;justify-content:center">
-          <div class="badge-dot"></div>
-          Launching Q1 2025 · 40% off for early signups
-        </div>
-        <div class="cta-h">Be first to<br/><span style="color:var(--amber)">go viral.</span></div>
-        <p class="cta-sub">Join the waitlist. Get 40% off your first plan — locked in forever. We'll email you 24 hours before launch.</p>
-        <div class="cta-form">
-          <input
-            id="wlInput"
-            class="cta-input"
-            type="email"
-            placeholder="your@email.com"
-          />
-          <button class="btn-primary" onclick="joinWaitlist()">Join →</button>
-        </div>
-        <div class="cta-msg" id="wlMsg"></div>
-        <div class="cta-note">No spam. No credit card. Unsubscribe any time.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     FOOTER
-════════════════════════════════════════ -->
-<footer>
-  <a href="#" class="footer-logo nav-logo">
-    <div class="logo-mark">L</div>
-    LaunchPe
-  </a>
-  <div class="footer-links">
-    <a href="#">Twitter</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Use</a>
-    <a href="mailto:hello@launchpe.in">Contact</a>
-  </div>
-  <div class="footer-copy">© 2025 LaunchPe · Made for Indian founders 🇮🇳</div>
-</footer>
-
-<!-- ═══════════════════════════════════════
-     SCRIPTS
-════════════════════════════════════════ -->
-<script src="js/demo.js"></script>
-<script src="js/main.js"></script>
-
+    <script src="js/demo.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
